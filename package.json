@@ -1,0 +1,17 @@
+{
+  "name": "url-whitelist",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url-pattern": "^1.0.1"
+  },
+  "devDependencies": {
+    "should": "^11.0.0"
+  }
+}
