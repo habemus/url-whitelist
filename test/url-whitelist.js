@@ -40,9 +40,9 @@ describe('url-whitelist', function () {
     isWhitelisted('http://yet.another.domain.com').should.equal(true);
   });
 
-  it('should accept a whitespace separated list of urls in the form of a string', function () {
+  it('should accept a comma separated list of urls in the form of a string', function () {
     const isWhitelisted = urlWhitelist(
-      'http://localhost:4000 https://*.domain.com   http://another.com'
+      'http://localhost:4000,https://*.domain.com,http://another.com'
     );
 
     isWhitelisted('http://localhost:4000').should.equal(true);
