@@ -55,4 +55,11 @@ describe('url-whitelist', function () {
     isWhitelisted('http://localhost:3000').should.equal(false);
   });
 
+  it('should accept the * wildcard', function () {
+    const isWhitelisted = urlWhitelist('*');
+
+    isWhitelisted('http://gmail.com').should.equal(true);
+    isWhitelisted('https://habem.us').should.equal(true);
+  });
+
 });
